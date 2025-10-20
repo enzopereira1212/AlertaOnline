@@ -31,35 +31,43 @@
 </head>
 <body class="font-sans bg-gray-50">
     <!-- Header -->
-    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <h1 class="text-2xl font-bold flex items-center">
-                    <i data-feather="shield" class="mr-2"></i> Cyberbullying e Crimes Digitais
-                </h1>
-                <nav class="hidden md:block">
-                    <ul class="flex space-x-6">
-                        <li><a href="#oque-e" class="hover:text-gray-200 transition">O que é?</a></li>
-                        <li><a href="#comparativo" class="hover:text-gray-200 transition">Comparativo</a></li>
-                        <li><a href="#protecao" class="hover:text-gray-200 transition">Como se proteger</a></li>
-                        <li><a href="#quiz" class="hover:text-gray-200 transition">Quiz</a></li>
-                    </ul>
-                </nav>
-                <button class="md:hidden" id="menu-toggle">
-                    <i data-feather="menu"></i>
-                </button>
-            </div>
-            <!-- Mobile menu -->
-            <div class="md:hidden hidden mt-4" id="mobile-menu">
-                <ul class="space-y-2">
-                    <li><a href="#oque-e" class="block py-2 hover:bg-indigo-700 rounded px-2 transition">O que é?</a></li>
-                    <li><a href="#comparativo" class="block py-2 hover:bg-indigo-700 rounded px-2 transition">Comparativo</a></li>
-                    <li><a href="#protecao" class="block py-2 hover:bg-indigo-700 rounded px-2 transition">Como se proteger</a></li>
-                    <li><a href="#quiz" class="block py-2 hover:bg-indigo-700 rounded px-2 transition">Quiz</a></li>
+<header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold flex items-center">
+                <i data-feather="shield" class="mr-2"></i> Cyberbullying e Crimes Digitais
+            </h1>
+
+            <!-- Menu desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#oque-e" class="hover:text-gray-200 transition scroll-link">O que é?</a></li>
+                    <li><a href="#comparativo" class="hover:text-gray-200 transition scroll-link">Comparativo</a></li>
+                    <li><a href="#protecao" class="hover:text-gray-200 transition scroll-link">Como se proteger</a></li>
+                    <li><a href="#quiz" class="hover:text-gray-200 transition scroll-link">Quiz</a></li>
+                    <li><a href="#faq" class="hover:text-gray-200 transition scroll-link">FAQ</a></li>
                 </ul>
-            </div>
+            </nav>
+
+            <!-- Botão menu mobile -->
+            <button class="md:hidden" id="menu-toggle">
+                <i data-feather="menu"></i>
+            </button>
         </div>
-    </header>
+
+        <!-- Menu mobile -->
+        <div class="md:hidden hidden mt-4" id="mobile-menu">
+            <ul class="space-y-2">
+                <li><a href="#oque-e" class="block py-2 hover:bg-indigo-700 rounded px-2 transition scroll-link">O que é?</a></li>
+                <li><a href="#comparativo" class="block py-2 hover:bg-indigo-700 rounded px-2 transition scroll-link">Comparativo</a></li>
+                <li><a href="#protecao" class="block py-2 hover:bg-indigo-700 rounded px-2 transition scroll-link">Como se proteger</a></li>
+                <li><a href="#quiz" class="block py-2 hover:bg-indigo-700 rounded px-2 transition scroll-link">Quiz</a></li>
+                <li><a href="#faq" class="block py-2 hover:bg-indigo-700 rounded px-2 transition scroll-link">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
 
     <!-- Hero Section -->
     <section class="gradient-bg text-white py-20">
@@ -346,6 +354,100 @@
         </div>
     </section>
 
+   <!-- FAQ -->
+<section id="faq" class="section py-16 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10" data-aos="fade-up">
+            <i data-feather="help-circle" class="mr-2 text-indigo-600"></i> Perguntas Frequentes (FAQ)
+        </h2>
+
+        <div class="space-y-4" data-aos="fade-up">
+            <!-- FAQ item -->
+            <div class="bg-white rounded-lg shadow p-5 cursor-pointer faq-item">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg text-gray-800">O cyberbullying pode causar depressão ou outros problemas?</h3>
+                    <i data-feather="chevron-down" class="text-indigo-600 transition-transform"></i>
+                </div>
+                <p class="text-gray-600 mt-3 hidden">
+                    Sim. As vítimas de cyberbullying podem desenvolver ansiedade, depressão, baixa autoestima e até pensamentos suicidas.
+                    Por isso, é fundamental procurar ajuda psicológica e conversar com pessoas de confiança.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5 cursor-pointer faq-item">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg text-gray-800">Onde posso ligar se estiver passando por cyberbullying?</h3>
+                    <i data-feather="chevron-down" class="text-indigo-600 transition-transform"></i>
+                </div>
+                <p class="text-gray-600 mt-3 hidden">
+                    Você pode ligar gratuitamente para o <strong>Disque 100</strong> (Direitos Humanos) ou procurar ajuda na 
+                    <a href="https://www.safernet.org.br" target="_blank" class="text-indigo-600 hover:underline">SaferNet</a>. 
+                    Também é possível registrar boletim de ocorrência em uma delegacia especializada em crimes digitais.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5 cursor-pointer faq-item">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg text-gray-800">Quais são as consequências do cyberbullying?</h3>
+                    <i data-feather="chevron-down" class="text-indigo-600 transition-transform"></i>
+                </div>
+                <p class="text-gray-600 mt-3 hidden">
+                    As consequências podem ser emocionais, sociais e até legais. A vítima pode se isolar, perder o rendimento escolar e desenvolver
+                    traumas psicológicos. O agressor também pode responder judicialmente, dependendo da gravidade.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5 cursor-pointer faq-item">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg text-gray-800">O cyberbullying é considerado crime?</h3>
+                    <i data-feather="chevron-down" class="text-indigo-600 transition-transform"></i>
+                </div>
+                <p class="text-gray-600 mt-3 hidden">
+                    Sim. Dependendo do caso, o cyberbullying pode se enquadrar em crimes como calúnia, difamação, injúria ou ameaça,
+                    previstos no Código Penal e no Estatuto da Criança e do Adolescente. A pena pode incluir multa e prisão.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5 cursor-pointer faq-item">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg text-gray-800">O que devo fazer se eu presenciar um caso de cyberbullying?</h3>
+                    <i data-feather="chevron-down" class="text-indigo-600 transition-transform"></i>
+                </div>
+                <p class="text-gray-600 mt-3 hidden">
+                    Nunca incentive ou compartilhe conteúdo ofensivo. Apoie a vítima, registre provas (como prints) e denuncie nas plataformas
+                    e órgãos competentes. A omissão também ajuda o agressor.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5 cursor-pointer faq-item">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg text-gray-800">Como posso evitar ser vítima de crimes digitais?</h3>
+                    <i data-feather="chevron-down" class="text-indigo-600 transition-transform"></i>
+                </div>
+                <p class="text-gray-600 mt-3 hidden">
+                    Mantenha suas contas seguras com senhas fortes, evite compartilhar informações pessoais e desconfie de links desconhecidos.
+                    Ative autenticação em dois fatores sempre que possível.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // FAQ toggle
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const icon = item.querySelector('i');
+        const answer = item.querySelector('p');
+
+        item.addEventListener('click', () => {
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+    });
+</script>
+
+
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
@@ -471,6 +573,27 @@
                 });
             });
         });
+
+        // Rolagem suave para links internos
+    document.querySelectorAll('.scroll-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+
+            // fecha o menu mobile após clicar
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    });
     </script>
 </body>
 </html>
